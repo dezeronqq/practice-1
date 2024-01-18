@@ -1,0 +1,91 @@
+<html>   
+    <body>
+<style>
+body {
+    -webkit-animation: colorchange 60s infinite; 
+    animation: colorchange 60s infinite;
+}
+@-webkit-keyframes colorchange {
+     0%  {background: #786868;}
+    25%  {background: #78281F;}
+    50%  {background: #117A65;}
+    75%  {background: #DC7633;}
+    100% {background: #9B59B6;}
+}
+@keyframes colorchange {
+     0%  {background: #786868;}
+    25%  {background: #78281F;}
+    50%  {background: #117A65;}
+    75%  {background: #DC7633;}
+    100% {background: #9B59B6;}
+}   
+article {
+    display: grid;
+    grid-template-columns: 
+    [full-start] minmax(1em, 1fr)
+    [main-start] minmax(0, 56em) 
+    [main-end] minmax(1em, 1fr)
+    [full-end];
+    grid-gap: 1em;
+}
+section {
+    grid-column: main;
+}
+figure {
+    grid-column: full;
+}
+body {
+    padding: 2em 0;
+}
+article > * {
+    background-color: #eaeaea;
+    padding: 2em;
+}
+figure {
+    text-align: center;
+}
+img {
+    max-width: 100%;
+}
+</style>
+        <article>
+            <section>
+                <h1>DeLorean DMC-12</h1>
+                <p><b>DeLorean DMC-12</b> — спортивный автомобиль, 
+                    который выпускался в Северной Ирландии 
+                    для американской автомобильной компании 
+                    DeLorean Motor Company с 1981 по 1983 год. 
+                    В 2009 году машины производились под заказ 
+                    и восстанавливались силами компании DMC Texas.</p>
+                <p>DeLorean DMC-12 обрёл широкую известность 
+                    после выхода фильма «Назад в будущее», в 
+                    котором автомобиль выступал в роли машины 
+                    времени. Эмметт Браун, создатель машины 
+                    времени, на вопрос его компаньона, Марти, 
+                    почему тот сделал машину времени из DeLorean, 
+                    ответил: «Если ты делаешь машину времени из 
+                    автомобиля, то почему бы ей не выглядеть 
+                    стильной … нержавеющая сталь кузова 
+                    благотворно сказывается на завихрениях 
+                    потока времени».</p>
+            </section>
+            <figure>
+                <img src="https://a.d-cd.net/c0a38a9s-1920.jpg">
+            </figure>
+            <section>
+                <p>В 2018 году вышла драма «Тачка на миллион» 
+                    о создании бренда DeLorean, автомобиля 
+                    DMC-12 и судьбе Джона Делореана.</p>
+                <p>В фантастическом фильме «Первому 
+                    игроку приготовиться» (2018) этот 
+                    автомобиль был замечен в коротком 
+                    эпизоде в сцене гонок, а его изображение 
+                    размещено на постерах кинокартины.</p>
+                <p>DeLorean DMC-12 фигурирует в роли 
+                    главной модели короткометражного 
+                    ролика под названием retrowave 
+                    Флориана Реннера.</p>
+            </section>
+        </article>
+    </body>
+</html>
